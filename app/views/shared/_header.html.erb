@@ -12,7 +12,7 @@
   
     <ul class='lists-right'>
       <% if user_signed_in? %>
-        <li><%= link_to "#{current_user.store}さん", "#", class: "user-nickname" %></li>
+        <li><%= link_to "#{current_user.store}さん", "#", class: "user-store" %></li>
         <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" %></li>
       <% else %>
         <li><%= link_to 'ログイン', "#", class: "login" %></li>
